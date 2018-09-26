@@ -1,0 +1,9 @@
+server:
+  port: 8767
+spring:
+  application:
+    name: blog-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.didispace.com/eureka/
