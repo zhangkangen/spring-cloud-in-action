@@ -7,3 +7,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka.didispace.com/eureka/
+zuul:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 2000
+  sensitive-headers:
+    -
+  routes:
+    sso-server:
+      path: /sso-server/**
+      serviceId: sso-server

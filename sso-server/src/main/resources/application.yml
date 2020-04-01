@@ -1,0 +1,12 @@
+server:
+  port: 8770
+spring:
+  application:
+    name: sso-server
+  redis:
+    host: localhost
+    port: 6379
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.didispace.com/eureka/
